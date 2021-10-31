@@ -56,3 +56,29 @@ Enter a base number: 3
 Enter an exponent: 4
 Answer = 81
 ```
+
+## 3. Program using pow() function to calculate the power of a number.
+```
+#include <math.h>
+#include <stdio.h>
+
+int main() {
+    double base, exp, result;
+    printf("Enter a base number: ");
+    scanf("%lf", &base);
+    printf("Enter an exponent: ");
+    scanf("%lf", &exp);
+
+    // calculates the power
+    result = pow(base, exp);
+
+    printf("%.1lf^%.1lf = %.2lf", base, exp, result);
+    return 0;
+}
+```
+### Output:
+```
+Enter a base number: 2.3
+Enter an exponent: 4.5
+2.3^4.5 = 42.44
+```
