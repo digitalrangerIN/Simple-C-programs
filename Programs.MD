@@ -57,7 +57,7 @@ Enter an exponent: 4
 Answer = 81
 ```
 
-## 3. Program using pow() function to calculate the power of a number.
+## 3. Program using pow() function to calculate the power of a number:
 ```
 #include <math.h>
 #include <stdio.h>
@@ -81,4 +81,26 @@ int main() {
 Enter a base number: 2.3
 Enter an exponent: 4.5
 2.3^4.5 = 42.44
+```
+
+## 4. Program to Reverse a Number:
+```
+#include <stdio.h>
+int main() {
+    int n, rev = 0, remainder;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    while (n != 0) {
+        remainder = n % 10;
+        rev = rev * 10 + remainder;
+        n /= 10;
+    }
+    printf("Reversed number = %d", rev);
+    return 0;
+}
+```
+### Output:
+```
+Enter an integer: 2345
+Reversed number = 5432
 ```
